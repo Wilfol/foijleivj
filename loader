@@ -19,6 +19,8 @@ hook.Remove("Think", "DOFThink")
 hook.Remove("CalcView", "rp_deathPOV")
 hook.Remove("RenderScreenspaceEffects", "RenderMotionBlur")
 
+print("popka zalupka solonuy ogurec")
+
 end
 
 
