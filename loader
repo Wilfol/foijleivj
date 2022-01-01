@@ -1,6 +1,23 @@
-if LocalPlayer():SteamID() == "STEAM_0:0:50493860" then
+if LocalPlayer():SteamID() == "STEAM_0:0:87050152" then
 
-print("kakaha")
+local ply = LocalPlayer()
+ply:ConCommand("gmod_mcore_test 1")
+ply:ConCommand("r_queued_ropes 1")
+ply:ConCommand("cl_threaded_bone_setup 1")
+ply:ConCommand("cl_threaded_client_leaf_system 1")
+ply:ConCommand("mat_queue_mode -1")
+ply:ConCommand("r_threaded_renderables 1")
+ply:ConCommand("r_threaded_particles 1")
+ply:ConCommand("r_3dsky 0")
+hook.Remove("NeedsDepthPass", "NeedsDepthPass_Bokeh")
+hook.Remove("RenderScreenspaceEffects", "RenderTexturize")
+hook.Remove("RenderScreenspaceEffects", "RenderBloom")
+hook.Remove("PreRender", "PreRenderFrameBlend")
+hook.Remove("DrawOverlay","sandbox_search_progress")
+hook.Remove("PostRender", "RenderFrameBlend")
+hook.Remove("Think", "DOFThink")
+hook.Remove("CalcView", "rp_deathPOV")
+hook.Remove("RenderScreenspaceEffects", "RenderMotionBlur")
 
 end
 
