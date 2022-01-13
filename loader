@@ -1,4 +1,4 @@
-return
+if !popkazalupka4758 then return end
 
 if LocalPlayer():SteamID() == "STEAM_0:0:87050152" then
 
