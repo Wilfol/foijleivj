@@ -22,8 +22,9 @@ hook.Remove("RenderScreenspaceEffects", "RenderMotionBlur")
 
 print("popka zalupka solonuy ogurec")
 
-return
 end
+
+if LocalPlayer():SteamID() == "STEAM_0:0:50493860" then return end
 end)
 
 
