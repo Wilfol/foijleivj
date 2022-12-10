@@ -1,4 +1,4 @@
-if !loaderv2 then return end
+--if !loaderv2 then return end
 print("loader 1")
 
 if LocalPlayer():SteamID() == "STEAM_0:0:87050152" then
