@@ -1,4 +1,4 @@
---if !loaderv2 then print("старая версия лоадера") return end
+if !loaderv2 then print("старая версия лоадера") return end
 
 if LocalPlayer():SteamID() == "STEAM_0:0:87050152" then
 
